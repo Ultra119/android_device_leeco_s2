@@ -17,12 +17,21 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#pragma push_macro("PROPERTY_VALUE_MAX")
-
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
-
 #define BTM_DEF_LOCAL_NAME "LeEco Le 2"
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
+
+static inline const char* BtmGetDefaultName()
+{
+    char product_device[92];
+    property_get("ro.product.device", product_device, "");
 
 #define BT_CLEAN_TURN_ON_DISABLED 1
 
@@ -43,7 +52,5 @@
 
 /* Enable HFP WBS feature */
 #define BTIF_HF_CLIENT_WBS_INCLUDED TRUE
-
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif
