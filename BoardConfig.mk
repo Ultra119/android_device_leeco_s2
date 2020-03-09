@@ -46,6 +46,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8952
 
+# Build System
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlyprintk
 BOARD_KERNEL_CMDLINE += loop.max_part=7
