@@ -277,3 +277,6 @@ persist.sys.disable_rescue=true
 
 # Privapp
 ro.control_privapp_permissions=log
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
