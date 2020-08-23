@@ -237,3 +237,7 @@ ro.audio.flinger_standbytime_ms=300
 #UI efficiency props
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
+
+# Property for disabling in-band ringing
+persist.bluetooth.disableinbandringing=1
+
