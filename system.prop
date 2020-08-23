@@ -275,3 +275,5 @@ camera.notify_nfc=1
 # Rescue party
 persist.sys.disable_rescue=true
 
+# Privapp
+ro.control_privapp_permissions=log
