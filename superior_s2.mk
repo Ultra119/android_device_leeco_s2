@@ -24,13 +24,13 @@ $(call inherit-product, device/leeco/s2/device.mk)
 # Inherit some common LineageOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
 PRODUCT_MANUFACTURER := LeMobile
-PRODUCT_NAME := lineage_s2
+PRODUCT_NAME := superior_s2
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
