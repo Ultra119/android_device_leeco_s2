@@ -427,3 +427,10 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
 # VSync for CPU rendered app    
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.cpurend.vsync=false
+	
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
