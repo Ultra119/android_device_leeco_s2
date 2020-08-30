@@ -30,6 +30,7 @@ vendor.voice.voip.conc.disabled=false
 vendor.voice.record.conc.disabled=false
 ro.af.client_heap_size_kbyte=7168
 ro.config.media_vol_steps=25
+ro.ril.enable.amr.wideband=1
 
 # Property for AudioSphere Post Processing
 vendor.audio.pp.asphere.enabled=false
