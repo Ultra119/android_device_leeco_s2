@@ -434,7 +434,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
-
-# init.d support
-PRODUCT_PACKAGES += \
-    sysinit
