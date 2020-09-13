@@ -81,7 +81,12 @@ function blob_fixup() {
     product/lib64/libdpmframework.so)
         sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
         ;;
-
+    vendor/lib64/libsettings.so)
+        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        ;;
+    vendor/lib64/libwvhidl.so)
+        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        ;;
     esac
 }
 

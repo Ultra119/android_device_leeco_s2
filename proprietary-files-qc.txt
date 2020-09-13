@@ -192,7 +192,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 # DRM (Widevine) - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.11.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
-vendor/lib64/libwvhidl.so|72ebe6aa5c8f5a681979423149896b3d2201d974
+vendor/lib64/libwvhidl.so|e7b42aa92de82670803949c88c678243b93c5178
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8952.so
@@ -591,7 +591,7 @@ vendor/etc/init/imsqmidaemon.rc|dda16d842b7c65296e97bc9921b723a43b152ba3
 vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
 vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
-vendor/lib64/libsettings.so|a315356ae32b15c8300796e23aeb39c5e0da8d3d
+vendor/lib64/libsettings.so|10a89f1e819b6df4f69956804e8d92a3be4c0dd1
 
 # RIL - from river - motorola/river_retail/river:10/QPU30.52-16-2/be43c
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
