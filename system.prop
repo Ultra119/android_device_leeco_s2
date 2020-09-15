@@ -281,3 +281,6 @@ ro.control_privapp_permissions=log
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
+
+# USAP
+persist.device_config.runtime_native.usap_pool_enabled=true
