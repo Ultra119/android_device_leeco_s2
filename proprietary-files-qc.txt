@@ -535,7 +535,6 @@ vendor/lib/lib-rtpcommon.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib/lib-rtpsl.so
-vendor/lib/lib-uceservice.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
@@ -549,7 +548,6 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
-vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|cbc75b554051298020506d85427a1aa70346fbd5
@@ -580,6 +578,9 @@ vendor/etc/init/vendor.qti.tftp.rc|091915c28a3bc574d39189688748cc922d9e65e4
 -product/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
 product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
 product/lib64/libimsmedia_jni.so|3540752cc3658261ea3c909f03018eea4398f84e
+
+# RIL (IMS) - from Gemini - Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V10.2.2.0.OAAMIXM
+vendor/lib64/lib-uceservice.so|2d84174929410554ffb66e6e917442eaee525e58
 
 # Sensors - from daisy - xiaomi/daisy/daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 vendor/bin/sensors.qti|a0701f889c2af8dd964a8f0300761e91a3748815
