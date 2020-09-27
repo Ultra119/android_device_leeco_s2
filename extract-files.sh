@@ -77,6 +77,11 @@ function blob_fixup() {
         sed -i -e 's|file="/system/framework/|file="/product/framework/|g' "${2}"
         ;;
 
+    # Use libcutils-v29.so for libdpmframework.so
+    product/lib64/libdpmframework.so)
+        sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+        ;;
+
     esac
 }
 
