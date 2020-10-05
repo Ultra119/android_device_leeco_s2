@@ -78,6 +78,7 @@ dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.dex2oat-threads=6
 # use 4 cores during boot image dex compilation
 dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.dex2oat64.enabled=true
 
 # Fastcharge
 persist.sys.le_fast_chrg_enable=1
