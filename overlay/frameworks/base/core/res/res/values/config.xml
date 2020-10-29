@@ -122,9 +122,6 @@
         <item>255</item>
     </integer-array>
         
-    <!-- Enable adjusting the button backlight -->
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
-    
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
