@@ -64,12 +64,12 @@ function blob_fixup() {
 
     # Remove all unused dependencies from FP blobs
     vendor/bin/gx_fpcmd | vendor/bin/gx_fpd)
-        patchelf --remove-needed "libbacktrace.so" "${2}"
-        patchelf --remove-needed "libunwind.so" "${2}"
-        patchelf --remove-needed "libkeystore_binder.so" "${2}"
-        patchelf --remove-needed "libsoftkeymasterdevice.so" "${2}"
-        patchelf --remove-needed "libsoftkeymaster.so" "${2}"
-        patchelf --remove-needed "libkeymaster_messages.so" "${2}"
+        "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
+        "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+        "${PATCHELF}" --remove-needed "libkeystore_binder.so" "${2}"
+        "${PATCHELF}" --remove-needed "libsoftkeymasterdevice.so" "${2}"
+        "${PATCHELF}" --remove-needed "libsoftkeymaster.so" "${2}"
+        "${PATCHELF}" --remove-needed "libkeymaster_messages.so" "${2}"
         ;;
 
     # Move ims libs to product
@@ -82,10 +82,10 @@ function blob_fixup() {
         sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
         ;;
     vendor/lib64/libsettings.so)
-        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
         ;;
     vendor/lib64/libwvhidl.so)
-        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
         ;;
     esac
 }
