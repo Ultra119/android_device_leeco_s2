@@ -399,26 +399,15 @@ vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
 vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
 vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
 
-# Postprocessing - from SRT Phone 8.0.0
-etc/permissions/com.qti.snapdragon.sdk.display.xml|bd2a3394bdd6ec4e94fa6a59e816a97e89940ab6
-framework/com.qti.snapdragon.sdk.display.jar|c7f5835922ab0388efd21d2ec818580f5676b191
--lib/vendor.display.color@1.0.so|c5b6d3a2db15d191048c493d033b94949c40ccc0
-lib/vendor.display.postproc@1.0.so|1630c2d20e2374532317ab81ad8cd7e6ff235cb7
-lib/vendor.qti.hardware.qdutils_disp@1.0.so|50cf82a0bd8278ac8dea0b48f0c70c6554be6243
--lib64/vendor.display.color@1.0.so|690ea9ef2c3cd3cbccb0be30dd081a94d902f88b
-lib64/vendor.display.postproc@1.0.so|404b08b00a4880631564c194b84c491b76e6a304
-lib64/vendor.qti.hardware.qdutils_disp@1.0.so|b8c23e01172cecdb260c0407ccaddd8f1a6b44fd
-vendor/bin/mm-pp-daemon|5995351da60c0749e73a75c384dd24c92e1527ac
-vendor/lib/libdisp-aba.so|f1161c8343578ff46e061be30a2d941dd475b833
-vendor/lib/libsd_sdk_display.so|dc4e7574e5196ded3a5d71a8a34f05107b862a20
-vendor/lib/vendor.display.color@1.0_vendor.so|9c0c4714d7a7f085b70360cd8d08768e2a2354b1
-vendor/lib/vendor.display.postproc@1.0_vendor.so|6455fe689edea6049dab7a3452d5cc8b7daec63d
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so|27b84955082ee5e2d31d4b2683151163c21113e9
-vendor/lib64/libdisp-aba.so|55c3ac02a08e1b559c2eff89b399ee424486c0d5
-vendor/lib64/libsd_sdk_display.so|3d5cfc865b22a0d591614f6e79afd79991b1b3ad
-vendor/lib64/vendor.display.color@1.0_vendor.so|2794608a8d418ae0fa31378f90abd94f1ed8cd80
-vendor/lib64/vendor.display.postproc@1.0_vendor.so|cd7a66aebd140ae1c5369ee9d903a45257b47b0f
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so|2943c3a72992ef81c00a367400f350948cf5559b
+# Postprocessing - from daisy - xiaomi/daisy/daisy_sprout:10/QKQ1.191002.002/V11.0.11.0.QDLMIXM
+vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
+vendor/bin/mm-pp-dpps|5d68b2ae07de96e33d1c1b7698994ec2b219e084
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|8131a967a51959d88006a20b1f12ced0bf075e4c
+vendor/lib64/vendor.display.color@1.0.so|e90c75046ba1f6f677b9f719caaae8d91d1a5cde
+vendor/lib64/vendor.display.color@1.1.so|0e6a94dafc8ff10e54bae0004fe01e5f24ea3d33
+vendor/lib64/vendor.display.color@1.2.so|53b7d9d754f8909700d4b79c3145a209f638c7fd
+vendor/lib64/vendor.display.postproc@1.0.so|2c389d80a5c5cc87608babf29a056a74d69697e4
 
 # Power-off alarm - from daisy - xiaomi/daisy/daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
