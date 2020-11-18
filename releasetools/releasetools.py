@@ -9,15 +9,11 @@ import common
 import re
 
 def FullOTA_InstallEnd(info):
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/mnt/system");');
   RunCustomScript(info, "devinfo.sh", "")
-  info.script.AppendExtra('unmount("/mnt/system");');
   return
 
 def IncrementalOTA_InstallEnd(info):
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/mnt/system");');
   RunCustomScript(info, "devinfo.sh", "")
-  info.script.AppendExtra('unmount("/mnt/system");');
   return
 
 def RunCustomScript(info, name, arg):
